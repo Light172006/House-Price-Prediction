@@ -64,8 +64,8 @@ st.selectbox('Enter the furnishing condition',['Furnished','Semi-Furnished','Unf
 st.write('### AREA:')
 st.number_input('Enter the area in sqft',key='area')
 
-model = joblib.load(r"D:\\ML Projects\\House Price Prediction\\House-Price-Prediction\\House_Price_Prediction.pkl")
-feature_name = joblib.load(r"D:\\ML Projects\\House Price Prediction\\House-Price-Prediction\\Feature_Name.json")
+model = joblib.load(r"House_Price_Prediction.pkl")
+feature_name = joblib.load(r"Feature_Name.json")
 
 Data = dict()
 for i in feature_name:
@@ -88,5 +88,5 @@ if 'estimate' not in st.session_state:
 def predict():
     st.session_state.estimate =  model.predict(Data)
 
-if st.button('ESTIMATE',icon='💸',on_click=predict()):
+if st.button('ESTIMATE',icon='💸',on_click=predict):
     st.write(f'Estimated Price : ₹{round(float(st.session_state.estimate),2)} Lakh')
