@@ -64,8 +64,8 @@ st.selectbox('Enter the furnishing condition',['Furnished','Semi-Furnished','Unf
 st.write('### AREA:')
 st.number_input('Enter the area in sqft',key='area')
 
-model = joblib.load(r"D:\\ML Projects\\House Price Prediction\\House_Price_Prediction.pkl")
-feature_name = joblib.load(r"D:\\ML Projects\\House Price Prediction\\Feature_Name.json")
+model = joblib.load(r"D:\\ML Projects\\House Price Prediction\\House-Price-Prediction\\House_Price_Prediction.pkl")
+feature_name = joblib.load(r"D:\\ML Projects\\House Price Prediction\\House-Price-Prediction\\Feature_Name.json")
 
 Data = dict()
 for i in feature_name:
