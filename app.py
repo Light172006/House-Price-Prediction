@@ -53,7 +53,7 @@ st.write('### CAR PARKING:')
 st.slider('Enter the number of car parking',0,10,key='car_parking')
 
 st.write('### TOTAL FLOOR:')
-st.slider('Enter the total number floor',1,50,vaue=1,key='T_Lv')
+st.slider('Enter the total number floor',1,50,value=1,key='T_Lv')
 
 st.write('### FLOOR:')
 st.slider('Enter the floor number',0,st.session_state.T_Lv,key='C_Lv')
