@@ -86,7 +86,7 @@ if 'estimate' not in st.session_state:
     st.session_state.estimate = 0
 
 def predict():
-    st.session_state.estimate =  model.predict(Data)
+    st.session_state.estimate =  model.predict(Data)[0]
 
 if st.button('ESTIMATE',icon='💸',on_click=predict):
     st.write(f'Estimated Price : ₹{round(float(st.session_state.estimate),2)} Lakh')
