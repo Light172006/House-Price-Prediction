@@ -24,7 +24,7 @@ if 'area' not in st.session_state:
 if 'C_Lv' not in st.session_state:
     st.session_state.C_Lv = 0
 if 'T_Lv' not in st.session_state:
-    st.session_state.T_Lv = 0
+    st.session_state.T_Lv = 1
 
 st.write('### LOCATION:')
 st.selectbox('Enter Your Loaction',['thane', 'navi-mumbai', 'nagpur', 'mumbai', 'ahmedabad',
